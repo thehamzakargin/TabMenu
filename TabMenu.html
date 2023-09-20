@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="content-type" content="text/html; UTF-8">
+<title>Tab Menu</title>
+<style>
+ul{
+    margin:0; margin-bottom: 5px;
+}
+li{
+    display:inline; height:22px; padding-top:5px; padding-bottom: 5px; padding-right: 50px; color:red; border: 1px solid red;
+}
+div{
+    width: 15px; height:250px; margin-left: 40px; padding: 5px; border: 1px solid red;
+}
+</style>
+
+</head>
+<body>
+<ul>
+    <li onclick="show('firstfield')" style="cursor: pointer;">daily</li>
+    <li onclick="show('secondfield')" style="cursor: pointer;">mounthly</li>
+    <li onclick="show('thirdfield')" style="cursor: pointer;">yearly</li>
+</ul>
+<div id="firstfield">daily notation</div>
+<div id="secondfield"style="display:none;">mounthly notation</div>
+<div id="thirdfield"style="display:none;">yearly notation</div>
+
+<script type="text/javascript" language="javascript">
+function hideAll(){
+    var fields = document.getElementById("DIV");
+    var tall = field.lenght;
+    for(var baslangic = 0; baslangic<tall; baslangic++){
+        fields[baslangic].style.display = "none";
+    }
+}
+function show(variable){
+    hideAll();
+    document.getElementById(variable).style.display = "block";
+}
+</script>
+</body>
+</html>
